@@ -55,6 +55,10 @@ header {
     color: black;
 }
 
+.header__btn:hover {
+    color: white;
+}
+
 .header__contacts:after {
     content: "";
     clear: both;
@@ -126,4 +130,119 @@ header {
 
 #modal {
     display: none;
+}
+
+.slider {
+    background-image: url(../img/slider_picture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+
+.slider__item-content {
+    text-align: center;
+    padding-top: 110px;
+    max-width: 665px;
+    margin: 0 auto;
+}
+
+.slider__title {
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 22px;
+    font-family: "Roboto", sans-serif;
+}
+
+.slider__text {
+    line-height: 24px;
+    font-size: 18px;
+    color: #d3d2d2;
+    margin-bottom: 50px;
+}
+
+.slider__button {
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    border: 1px solid #ffc222;
+    padding: 8px 30px 8px 24px;
+    border-right-width: 20px;
+}
+
+.default-btn {
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    border: 1px solid #ffc222;
+    padding: 8px 30px 8px 24px;
+    border-right-width: 20px;
+    outline: none;
+}
+
+.default-btn::after {
+    content: "\f054";
+    font-family: "icomoon";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -15px;
+}
+
+.slider__inner {
+    position: relative;
+}
+
+.slick-btn {
+    position: absolute;
+    top: 70%;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+    background-color: #ffc222;
+    outline: none;
+}
+
+.slick-btn.slick-disabled {
+    background-color: gray;
+    cursor: default;
+}
+
+.slick-btn::before {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "icomoon";
+    color: white;
+}
+
+.slick-next {
+    right: 0;
+}
+
+.slick-next::before {
+    content: "\f054";
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-prev::before {
+    content: "\f053";
 }
