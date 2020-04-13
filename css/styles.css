@@ -22,7 +22,7 @@ li {
 
 body {
     /*font-family: 'Roboto', sans-serif;*/
-    font-family: 'PT Serif', serif;
+    font-family: "PT Serif", serif;
     font-weight: 400;
     font-size: 14x;
     line-height: 18px;
@@ -30,7 +30,7 @@ body {
 }
 
 header {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .header__top {
@@ -49,14 +49,14 @@ header {
 
 .header__btn::before {
     content: "\f0b1";
-    font-family: 'icomoon';
+    font-family: "icomoon";
     position: absolute;
     left: 22px;
     color: black;
 }
 
 .header__contacts:after {
-    content: '';
+    content: "";
     clear: both;
     display: block;
 }
@@ -76,7 +76,7 @@ header {
 
 .header__phone::before {
     content: "\f095";
-    font-family: 'icomoon';
+    font-family: "icomoon";
     position: absolute;
     left: 0;
     color: #ffc222;
@@ -88,7 +88,7 @@ header {
 
 .header__email::before {
     content: "\f003";
-    font-family: 'icomoon';
+    font-family: "icomoon";
     position: absolute;
     left: 0;
     color: #ffc222;
@@ -120,6 +120,10 @@ header {
     border-color: #ffc222;
 }
 
-.menu li+li {
+.menu li + li {
     padding-left: 10px;
+}
+
+#modal {
+    display: none;
 }

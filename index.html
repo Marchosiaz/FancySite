@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto:wght@100;400;500&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
@@ -23,7 +24,8 @@
                 <div class="header__contacts">
                     <a class="header__phone" href="tel:89523123152">+38 (096) 309 21 45</a>
                     <a class=" header__email" href="#">mark.hruzin@gmail.com</a>
-                    <a class="header__btn" href="#">Бесплатная консультация</a>
+                    <a data-fancybox data-src='#modal' href='javascript:;' class="header__btn" href="#">Бесплатная
+                        консультация</a>
                 </div>
             </div>
         </div>
@@ -47,6 +49,26 @@
             </div>
         </div>
     </header>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="modal">
+        <h2>Hello</h2>
+        <p>You're awesome</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
